@@ -1,0 +1,10 @@
+/* Set a background image by replacing the URL below */
+body {
+    background: url('https://images7.alphacoders.com/948/thumb-1920-948426.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+  

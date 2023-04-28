@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/menu.css">
+    <title>Iniciar Sesion</title>
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+        
+            <!-- Icon -->
+            <div class="fadeIn first">
+            <img src="public/img/hdlogo.png" id="icon" alt="User Icon" />
+            <h1>Sistema de Soporte Tecnico</h1>
+            </div>
+        
+            <!-- Login Form -->
+            <form id="frmLogin" method="POST" onsubmit="return loginUsuario()">
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Nombre de Usuario" required>
+                <input type="password" id="password" class="fadeIn fourth" name="password" placeholder="Contraseña" required>
+                <input type="submit" class="fadeIn first" value="Ingresar">
+            </form>
+        
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+            <a class="underlineHover" href="#" data-toggle="modal" data-target="#modalContacto">¿Algun problema?</a>
+            </div>
+        </div>
+    </div>
+
+
+<div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ayuda</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        Si tiene algun problema al iniciar sesion, comuniquese al siguiente numero: 932 486 920 - Frank Roque Ruiz
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
+    </div>
+    </div>
+</div>
+</div>
+
+    <script src="public/jquery/jquery-3.6.0.min.js"></script>
+    <script src="public/bootstrap/popper.min.js"></script>
+    <script src="public/bootstrap/bootstrap.min.js"></script>
+    <script src="public/sweetalert2/sweetalert2@11.js"></script>
+    <script src="public/js/usuarios/login.js"></script>
+</body>
+</html>
